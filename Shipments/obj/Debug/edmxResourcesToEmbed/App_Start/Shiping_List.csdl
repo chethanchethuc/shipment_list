@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TASKModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tbl_Shipment">
+    <Key>
+      <PropertyRef Name="shipment_Id" />
+    </Key>
+    <Property Name="shipment_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="sender_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="description" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="recipient_Address" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="expedited" Type="Boolean" />
+    <Property Name="shipment_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="TASKEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tbl_Shipment" EntityType="Self.tbl_Shipment" />
+  </EntityContainer>
+</Schema>

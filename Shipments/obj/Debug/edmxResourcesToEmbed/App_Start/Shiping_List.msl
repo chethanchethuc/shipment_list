@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TASKModel1StoreContainer" CdmEntityContainer="TASKEntities1">
+    <EntitySetMapping Name="tbl_Shipment">
+      <EntityTypeMapping TypeName="TASKModel1.tbl_Shipment">
+        <MappingFragment StoreEntitySet="tbl_Shipment">
+          <ScalarProperty Name="shipment_Id" ColumnName="shipment_Id" />
+          <ScalarProperty Name="sender_Name" ColumnName="sender_Name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="recipient_Address" ColumnName="recipient_Address" />
+          <ScalarProperty Name="expedited" ColumnName="expedited" />
+          <ScalarProperty Name="shipment_Type" ColumnName="shipment_Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
