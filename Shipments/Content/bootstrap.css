@@ -785,9 +785,8 @@ pre code {
 
 .row {
   margin-right: -15px;
-  margin-left: -15px;g
-  min-height: 1px;
-  padding-righ
+  margin-left: -15px;
+  padding: 10px, 200px,10px,200px;
 }
 
 .row:before,

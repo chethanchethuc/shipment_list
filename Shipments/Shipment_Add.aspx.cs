@@ -48,6 +48,11 @@ namespace Shipments
         {
             Response.Redirect("Shipment_List.aspx");
         }
+        protected void btnClear_Click(object sender, EventArgs e)
+        {
+            clear();
+        }
+        
         public void clear()
         {
             txt_Sender_Name.Text = txt_Description.Text = txt_Recipient_Address.Text = "";

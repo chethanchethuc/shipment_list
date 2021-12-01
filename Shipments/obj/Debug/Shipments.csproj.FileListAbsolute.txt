@@ -63,3 +63,4 @@ D:\FOISOFT\CHETHAN\Task\Shipments\Shipments\bin\Microsoft.Owin.Security.Microsof
 D:\FOISOFT\CHETHAN\Task\Shipments\Shipments\bin\Microsoft.Owin.Security.OAuth.xml
 D:\FOISOFT\CHETHAN\Task\Shipments\Shipments\obj\Debug\Shipments.dll
 D:\FOISOFT\CHETHAN\Task\Shipments\Shipments\obj\Debug\Shipments.pdb
+D:\FOISOFT\CHETHAN\Task\Shipments\Shipments\obj\Debug\Shipments.csprojResolveAssemblyReference.cache

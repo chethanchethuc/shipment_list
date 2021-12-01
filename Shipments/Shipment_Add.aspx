@@ -6,15 +6,13 @@
             <h1 style="text-align: center">Add New Shipment</h1>
         </div>
         <div class="col-lg-12" style="margin-bottom: 5px;">
-            <div class="row add">
+            <div class="row">
                 <div class="form-group">
                     <asp:Label ID="lbl_Sender_Name" runat="server" Text="Sender Name" Style="margin-right: 25px; font-weight: bold; margin-top: 8px;"></asp:Label>
                     <asp:TextBox ID="txt_Sender_Name" runat="server" CssClass="form-control" placeholder="Sender Name" Style="max-width: none;"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="req_Sender_Name" runat="server"
-                        ControlToValidate="txt_Sender_Name"
-                        ErrorMessage="Sender Name is a required."
-                        ForeColor="Red">
-                    </asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="rfv_Sender_Name" runat="server"
+                        ControlToValidate="txt_Sender_Name" ForeColor="Red"
+                        ToolTip="Please enter sender name" ValidationGroup="Validate" Display="Dynamic">* Please Enter Sender Name</asp:RequiredFieldValidator>
                 </div>
                 <div class="form-group">
                     <asp:Label ID="lbl_Description" Text="Description" runat="server" Style="margin-right: 25px; font-weight: bold; margin-top: 8px;" />
@@ -37,8 +35,9 @@
                         <asp:ListItem Value="Truckload">Truckload</asp:ListItem>
                     </asp:DropDownList>
                 </div>
-                <asp:Button ID="btnClear" runat="server" Text="Back" OnClick="btnBack_Click" class="btn btn-primary"></asp:Button>
-                <asp:Button ID="btnAdd" runat="server" Text="Add" OnClick="btnAdd_Click" class="btn btn-success"></asp:Button>
+                <asp:Button ID="btnClear" runat="server" Text="Back" OnClick="btnBack_Click" class="btn btn-primary" ></asp:Button>
+                <asp:Button ID="btnAdd" runat="server" Text="Add" OnClick="btnAdd_Click" class="btn btn-success" ValidationGroup="Validate"></asp:Button>
+                <asp:Button ID="Button1" CssClass="btn  btn-default" runat="server" Text="Clear" ToolTip="Clear / Refresh" OnClick="btnClear_Click" />
             </div>
         </div>
     </div>

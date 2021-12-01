@@ -31,13 +31,13 @@ namespace Shipments {
         protected global::System.Web.UI.WebControls.TextBox txt_Sender_Name;
         
         /// <summary>
-        /// req_Sender_Name control.
+        /// rfv_Sender_Name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator req_Sender_Name;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfv_Sender_Name;
         
         /// <summary>
         /// lbl_Description control.
@@ -137,5 +137,14 @@ namespace Shipments {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnAdd;
+        
+        /// <summary>
+        /// Button1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }
